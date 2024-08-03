@@ -5,23 +5,117 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638582955950000000
-    m_Hash: 674148673
+      ticks: 638582979720000000
+    m_Hash: 2364407538
   m_LockFileStatus:
     m_FilePath: /Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638582955950000000
-    m_Hash: 3501348712
+      ticks: 638582979780000000
+    m_Hash: 645940567
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
-  m_LocalFileStatus: []
+  m_LocalFileStatus:
+  - m_FilePath: /Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Packages/com.ptc.vuforia.engine-10.25.4.tgz/package.json
+    m_PathExists: 0
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 0
+    m_Hash: 0
+  - m_FilePath: /Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Packages/com.ptc.vuforia.engine-10.25.4.tgz
+    m_PathExists: 1
+    m_ContentTrackingEnabled: 1
+    m_ModificationDate:
+      serializedVersion: 2
+      ticks: 638563085200000000
+    m_Hash: 242160103
 m_ProjectPath: /Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Packages
 m_EditorVersion: 2022.3.28f1 (6bae5ce6b222)
 m_ResolvedPackages:
+- packageId: com.ptc.vuforia.engine@file:/Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Packages/com.ptc.vuforia.engine-10.25.4.tgz
+  testable: 0
+  isDirectDependency: 1
+  version: 10.25.4
+  source: 6
+  resolvedPath: /Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Library/PackageCache/com.ptc.vuforia.engine@b724a8714d15
+  assetPath: Packages/com.ptc.vuforia.engine
+  name: com.ptc.vuforia.engine
+  displayName: Vuforia Engine AR
+  author:
+    name: PTC Inc.
+    email: 
+    url: https://developer.vuforia.com/
+  category: 
+  type: 
+  description: Vuforia Engine is the most widely used platform for AR development,
+    with support for leading phones, tablets, and eyewear. Developers can easily
+    add advanced computer vision functionality to Android, iOS, and UWP apps, to
+    create AR experiences that realistically interact with objects and the environment.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 8.0.101
+    - 8.1.9
+    - 8.1.12
+    - 8.3.9
+    - 8.5.8
+    - 8.5.9
+    compatible: []
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  resolvedDependencies:
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  keywords:
+  - vuforia
+  - engine
+  - ar
+  - xr
+  - augmented
+  - reality
+  - sdk
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 1
+    deprecationMessage: This package is no longer supported on this editor version.
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.unity.collab-proxy@2.4.4
   testable: 0
   isDirectDependency: 1
@@ -3330,6 +3424,69 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 1.2.5
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.unity.nuget.newtonsoft-json@3.2.1
+  testable: 0
+  isDirectDependency: 0
+  version: 3.2.1
+  source: 1
+  resolvedPath: /Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1
+  assetPath: Packages/com.unity.nuget.newtonsoft-json
+  name: com.unity.nuget.newtonsoft-json
+  displayName: Newtonsoft Json
+  author:
+    name: 
+    email: 
+    url: 
+  category: 
+  type: library
+  description: 'Newtonsoft Json for use in Unity projects and Unity packages. Currently
+    synced to version 13.0.2.
+
+
+    This package is used for advanced json serialization
+    and deserialization. Most Unity users will be better suited using the existing
+    json tools built into Unity.
+
+    To avoid assembly clashes, please use this
+    package if you intend to use Newtonsoft Json.'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 3.2.1
+    compatible:
+    - 3.2.1
+    recommended: 3.2.1
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords: []
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 0
+  documentationUrl: 
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.nuget.newtonsoft-json.git
+    revision: d8e49aef8979bef617144382052ec2f479645eaf
+    path: 
+  unityLifecycle:
+    version: 3.2.1
     nextVersion: 
     recommendedVersion: 
     isDeprecated: 0

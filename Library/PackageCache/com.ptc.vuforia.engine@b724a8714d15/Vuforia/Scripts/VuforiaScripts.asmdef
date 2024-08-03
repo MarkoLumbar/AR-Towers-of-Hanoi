@@ -1,0 +1,62 @@
+{
+    "name": "VuforiaScripts",
+    "rootNamespace": "",
+    "references": [
+        "Unity.XR.ARFoundation",
+        "Unity.XR.ARSubsystems",
+        "Microsoft.MixedReality.OpenXR",
+        "Unity.XR.Management",
+        "Unity.XR.CoreUtils",
+        "UnityEngine.XR.MagicLeap",
+        "LuminUnity",
+        "Unity.RenderPipelines.Universal.Runtime",
+        "Unity.XR.OpenXR"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [
+        "GameCoreScarlett",
+        "GameCoreXboxOne",
+        "LinuxStandalone64",
+        "CloudRendering",
+        "PS4",
+        "PS5",
+        "Stadia",
+        "Switch",
+        "tvOS",
+        "WebGL",
+        "XboxOne"
+    ],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.arfoundation",
+            "expression": "4.0.0",
+            "define": "UNITY_XR_ARFOUNDATION"
+        },
+        {
+            "name": "com.microsoft.mixedreality.openxr",
+            "expression": "0.0.0",
+            "define": "MICROSOFT_MIXEDREALITY_OPENXR"
+        },
+        {
+            "name": "com.magicleap.unitysdk",
+            "expression": "0.0.0",
+            "define": "MAGICLEAP_UNITYSDK"
+        },
+        {
+            "name": "com.unity.render-pipelines.universal",
+            "expression": "0.0.0",
+            "define": "UNITY_RENDER_PIPELINES_UNIVERSAL"
+        },
+        {
+            "name": "com.unity.xr.openxr",
+            "expression": "0.0.0",
+            "define": "UNITY_XR_OPENXR"
+        }
+    ],
+    "noEngineReferences": false
+}

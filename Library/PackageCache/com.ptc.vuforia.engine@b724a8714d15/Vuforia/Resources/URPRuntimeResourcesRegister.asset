@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -290115117, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: URPRuntimeResourcesRegister
+  m_EditorClassIdentifier: 
+  mBarcodeOutlineMaterials:
+  - {fileID: 2100000, guid: 94257c524bead472cb0a3e2d584e093e, type: 2}
+  mBrightTextureMaterials:
+  - {fileID: 2100000, guid: f66ab814ac6774d39adf7367c82dd71d, type: 2}
+  mCameraDiffuseMaterials:
+  - {fileID: 2100000, guid: d73389e1fd62b47fa9f34e5d7decf09f, type: 2}
+  mCloudRecoTargetMaterials:
+  - {fileID: 2100000, guid: d03da127d2dfe49719ae8142113cb73c, type: 2}
+  mDefaultTargetMaterials:
+  - {fileID: 2100000, guid: 056842911aec04df791eb728b1dc43a1, type: 2}
+  mDepthContourMaterials:
+  - {fileID: 2100000, guid: 71f84a02dcc814185b81b967cc11bd88, type: 2}
+  - {fileID: 2100000, guid: be2ec9b43492d427da3fa3a3587394df, type: 2}
+  mDepthMaskMaterials:
+  - {fileID: 2100000, guid: ce277212e4b7349c1898302513229891, type: 2}
+  mGuideView2DMaterials:
+  - {fileID: 2100000, guid: 39ef188fe90ea485e927a7d5768159d9, type: 2}
+  mMeshVisualizationMaterials:
+  - {fileID: 2100000, guid: 552b1f48d7914420898b39c97b368881, type: 2}
+  mPointCloudHeightClipMaterials:
+  - {fileID: 2100000, guid: 80799c11dd6db41b7b29091035ae3556, type: 2}
+  mPointSplatMaterials:
+  - {fileID: 2100000, guid: 0c11156b760b444e29d373bb81afc51d, type: 2}
+  mPointSplatNoGeomMaterials:
+  - {fileID: 2100000, guid: 2cfc97beb1709498fa29080658e9ed4c, type: 2}
+  mUnlitTextureMaterials:
+  - {fileID: 2100000, guid: 588a68088f1364b419f38a78121d3a3b, type: 2}
+  mUnlitTextureHeightClipMaterials:
+  - {fileID: 2100000, guid: 9751c35c267df4a269c8039a01a19b7d, type: 2}
+  mUnlitVertexColorHeightClipMaterials:
+  - {fileID: 2100000, guid: 98177a0e33add4585a5bd11d0eca500e, type: 2}
+  mVideoBackgroundMaterials:
+  - {fileID: 2100000, guid: 24420b71b2bc348d294e34f51068d25c, type: 2}
+  mAreaTargetCapturePrefab: {fileID: 3877827908944427582, guid: aec61285adbfe4601bcd8c09b9ea9314,
+    type: 3}
+  mBarcodeReferencePrefab: {fileID: 4689439660394497417, guid: 16b96fc533f45433cbb620af3083adcb,
+    type: 3}
+  mDefaultMidAirIndicatorPrefab: {fileID: 1109022337124679420, guid: fdfbcecd2cdcd43f197137783a653f91,
+    type: 3}
+  mDefaultPlaneIndicatorPrefab: {fileID: 3677085263770089449, guid: 2ecae98587c5f496faa5d87c854894bf,
+    type: 3}
+  mGroundPlaneReferencePrefab: {fileID: 8619186969036953101, guid: e818862c3484b4bb9a48f9216dc958b3,
+    type: 3}
+  mMidAirReferencePrefab: {fileID: 2541630298281703939, guid: fd349cfb839aa46929a2ae937183a6ed,
+    type: 3}
+  mSessionRecorderPrefab: {fileID: 734396427569978620, guid: 8ce5dfe4cb6b24642b68cb2125a3004e,
+    type: 3}

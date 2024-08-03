@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.ptc.vuforia.engine": {
+      "tarball": {
+        "hash": "b724a8714d15",
+        "mtime": 1720711720311,
+        "size": 139148898,
+        "localPath": "/Users/markolumbar/Documents/Faks/AR/Unity/TowerOfHanoi/Packages/com.ptc.vuforia.engine-10.25.4.tgz"
+      }
+    }
+  }
+}

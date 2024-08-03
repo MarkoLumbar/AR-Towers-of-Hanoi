@@ -1,0 +1,39 @@
+{
+    "name": "VuforiaEditorScripts",
+    "rootNamespace": "",
+    "references": [
+        "VuforiaScripts",
+        "Unity.XR.Management",
+        "Unity.XR.Management.Editor",
+        "Unity.XR.CoreUtils",
+        "Unity.XR.OpenXR",
+        "Unity.XR.OpenXR.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "com.unity.xr.management",
+            "expression": "0.0.1",
+            "define": "UNITY_XR_MANAGEMENT"
+        },
+        {
+            "name": "com.unity.xr.arfoundation",
+            "expression": "4.0.0",
+            "define": "UNITY_XR_ARFOUNDATION"
+        },
+        {
+            "name": "com.unity.xr.openxr",
+            "expression": "0.0.0",
+            "define": "UNITY_XR_OPENXR"
+        }
+    ],
+    "noEngineReferences": false
+}
