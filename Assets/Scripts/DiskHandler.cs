@@ -9,7 +9,7 @@ public class DiskHandler : MonoBehaviour
     private Renderer renderer;
     private GameObject[] sticks;
     private bool isGameWon = false;
-    private Vector3[] initialDiskPositions;
+    private float initialDiskX;
     public float diskSize;
 
     private void Start()
@@ -18,13 +18,8 @@ public class DiskHandler : MonoBehaviour
         originalColor = renderer.material.color;
         sticks = GameObject.FindGameObjectsWithTag("Stick");
 
-        // initial disk positions
-        GameObject[] disks = GameObject.FindGameObjectsWithTag("Disk");
-        initialDiskPositions = new Vector3[disks.Length];
-        for (int i = 0; i < disks.Length; i++)
-        {
-            initialDiskPositions[i] = disks[i].transform.position;
-        }
+        // Store initial disk x position
+        initialDiskX = transform.localPosition.x;
     }
 
     private void OnMouseDown()
@@ -102,16 +97,18 @@ public class DiskHandler : MonoBehaviour
         }
     }
 
-    private void ResetGame()
+private void ResetGame()
     {
         isGameWon = false;
 
         GameObject[] disks = GameObject.FindGameObjectsWithTag("Disk");
-        for (int i = 0; i < disks.Length; i++)
+        foreach (GameObject disk in disks)
         {
-            disks[i].transform.position = initialDiskPositions[i];
-            disks[i].transform.parent = null;
-            disks[i].GetComponent<Renderer>().material.color = originalColor;
+            DiskHandler diskScript = disk.GetComponent<DiskHandler>();
+            disk.transform.parent = GameObject.Find("Left").transform;
+            diskScript.transform.localPosition = new Vector3(-1f, diskScript.transform.localPosition.y, diskScript.transform.localPosition.z);
+            diskScript.renderer.material.color = diskScript.originalColor;
+            diskScript.isSelected = false;
         }
     }
 }
