@@ -36,28 +36,34 @@ public class DiskHandler : MonoBehaviour
         }
     }
 
-    private void OnMouseUp()
+private void OnMouseUp()
+{
+    if (isSelected)
     {
-        if (isSelected)
+        RaycastHit hit;
+        if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
         {
-            RaycastHit hit;
-            if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit))
+            if (hit.collider.gameObject.CompareTag("Stick"))
             {
-                if (hit.collider.gameObject.CompareTag("Stick"))
+                GameObject stick = hit.collider.gameObject;
+                if (CanPlaceDiskOnStick(stick))
                 {
-                    if (CanPlaceDiskOnStick(hit.collider.gameObject))
+                    // Snapping behavior
+                    float snapDistance = 0.1f;
+                    if (Vector3.Distance(transform.position, stick.transform.position) < snapDistance)
                     {
-                        GameObject stick = hit.collider.gameObject;
-                        transform.position = new Vector3(stick.transform.position.x, transform.position.y, stick.transform.position.z);
-                        transform.parent = stick.transform;
-                        transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
+                        transform.position = stick.transform.position;
                     }
+
+                    transform.parent = stick.transform;
+                    transform.localPosition = new Vector3(0, transform.localPosition.y, 0);
                 }
             }
-            isSelected = false;
-            renderer.material.color = originalColor;
         }
+        isSelected = false;
+        renderer.material.color = originalColor;
     }
+}
 
 
     private bool CanPlaceDiskOnStick(GameObject stick)
