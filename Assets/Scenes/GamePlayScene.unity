@@ -247,6 +247,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskOrder: 4
   diskSize: 4
 --- !u!65 &5090689
 BoxCollider:
@@ -342,6 +343,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskOrder: 1
   diskSize: 1
 --- !u!136 &142142839
 CapsuleCollider:
@@ -647,6 +649,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskOrder: 3
   diskSize: 3
 --- !u!65 &177135696
 BoxCollider:
@@ -1691,6 +1694,7 @@ MonoBehaviour:
   originalColor: {r: 0, g: 0, b: 0, a: 0}
   selectedColor: {r: 1, g: 1, b: 1, a: 1}
   winColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  diskOrder: 2
   diskSize: 2
 --- !u!65 &1634904575
 BoxCollider:
