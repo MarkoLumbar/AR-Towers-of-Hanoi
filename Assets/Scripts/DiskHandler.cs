@@ -30,14 +30,10 @@ public class DiskHandler : MonoBehaviour
             return;
         }
 
-        if (!isSelected)
+        if (IsTopmostDisk())
         {
-            // check if clicked object is on top
-            if (transform.parent == null || !transform.parent.CompareTag("Disk"))
-            {
-                isSelected = true;
-                renderer.material.color = selectedColor;
-            }
+            isSelected = true;
+            renderer.material.color = selectedColor;
         }
     }
 
@@ -82,8 +78,38 @@ public class DiskHandler : MonoBehaviour
         Transform topDisk = stick.transform.GetChild(stick.transform.childCount - 1);
         DiskHandler topDiskScript = topDisk.GetComponent<DiskHandler>();
 
-        return diskOrder < topDiskScript.diskOrder;
+        return diskSize < topDiskScript.diskSize;
     }
+
+    private bool IsTopmostDisk()
+    {
+        if (transform.parent == null)
+        {
+            return true; // no parent -> it's the topmost disk
+        }
+
+        Debug.Log("Parent: " + transform.parent.name);
+        Debug.Log("Child Count: " + transform.parent.childCount);
+
+        // go through siblings, but not itself
+        for (int i = 0; i < transform.parent.childCount; i++)
+        {
+            Transform sibling = transform.parent.GetChild(i);
+            if (sibling != this)
+            {
+                DiskHandler siblingScript = sibling.GetComponent<DiskHandler>();
+                if (siblingScript && siblingScript.diskSize < diskSize)
+                {
+                    return false; // found smaller disk above -> not topmost
+                }
+            }
+        }
+
+        return true; // no smaller disks -> found topmost disk
+    }
+
+
+
 
     private Coroutine winCoroutine;
 
